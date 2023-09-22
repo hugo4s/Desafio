@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+body {
+  background-color: #F9F4FB;
+}
+#pageOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3.2rem;
+  padding-right: 3.4rem;
+  background-color: #F9F4FB;
+}
+#pageOne .astronauta {
+  height: 45vh;
+  width: auto; 
+  max-width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.7rem;
+}
+.titulo h1{
+  font-weight: 900;
+  color: #B52184;
+  font-size: 3.2rem;
+}
+.titulo p{
+  font-weight: 600;
+  color: #312D64;
+  font-size: 2rem;
+}
+.seta {
+  height: 10.5rem;
+  width: 6rem;
+  margin-top: 3.5rem;
+  align-self: center;
+  margin-bottom: 9.3rem;
+}
+#pageTwo {
+  background-color: #343193;
+  height: 124.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.divisao {
+  width: 35.2rem;
+  height: 33.7rem;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 5rem;
+}
+.divisao img {
+  margin: 2.6rem 24.5rem 0rem 2.6rem;
+}
+
+.secção {
+  width: 26.5rem;
+  margin: 1.3rem 6rem 2.6rem 2.6rem;
+}
+.secção h2 {
+  font-weight: 900;
+  font-family: 'Mulish', sans-serif;
+  color: #B52184;
+  font-size: 3rem;
+}
+.secção p {
+  font-weight: 600;
+  font-family: 'Mulish', sans-serif;
+  color: #312D64;
+  font-size: 1.6rem;
+}
+#pageThree {
+  background-color: #F9F4FB;
+  height: 56.5rem;
+}
+form {
+  margin: 7.8rem 3.9rem 6.5rem 4rem;
+}
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F4FB;
+}
+legend{
+  color: #B52184;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+form input::placeholder{
+  color: #5b578d;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+fieldset legend {
+  margin-bottom: 4.3rem;
+}
+input{
+margin-bottom: 2.4rem;
+border-radius: 16px;
+padding: 1.2rem 1.6rem;
+border: 2px solid #312D64;
+}
+textarea {
+  border-radius: 16px;
+  height: 12.6rem;
+  padding: 1.2rem 1.6rem;
+  color: #312D64;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 2px solid #312D64;
+}
+textarea::placeholder{
+    font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+button {
+  margin-top: 2.4rem;
+  padding: 1.6rem 1.6rem;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(to right, #343193, #302C63);
+  color: white;
+  border: none;
+  border-radius: 16px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Mulish', sans-serif;
+  background: linear-gradient(to right, #343193, #302C63);
+  height: 7.8rem;
+}
+.stars {
+  display: none;
+}
+@media (min-width: 1240px) {
+  :root {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+  }
+  #pageOne {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "titulo astronauta"
+    "seta astronauta"
+    ;
+  }
+  #pageOne .astronauta {
+    grid-area: astronauta;
+    height: 59rem;
+    width: 72rem;
+    grid-row: 1 / 3;
+    margin-bottom: 10rem;
+  }
+  #pageOne .seta {
+    grid-area: seta;
+    margin: 0;
+    margin-left: 27rem;
+  }
+  #pageOne .titulo {
+    grid-area: titulo;
+    margin: 31.2rem 2.8rem 
+  }
+  #pageOne .titulo h1{
+    font-size: 5.8rem;
+  }
+  #pageOne .titulo p{
+    font-size: 3.2rem;
+  }
+  #pageTwo {
+    height: 57.6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #pageTwo .divisao{
+    height: 44.8rem;
+    width: 33.6rem;
+    margin-left: px;
+    margin-bottom: 5rem;
+  }
+  #pageTwo .divisao .secção{
+    margin: 2rem 1.3rem 4.8rem 3.2rem;
+  }
+    #pageTwo .divisao .secção h2{
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+  }
+  #pageTwo .divisao .secção p{
+    font-size: 1.9rem;
+  }
+  #pageThree fieldset {
+    width: 60rem;
+  }
+  #pageThree fieldset legend {
+    font-size: 4.2rem;
+  }
+  #pageThree input, textarea{
+    width: 59.2rem;
+  }
+  #pageThree fieldset {
+    box-sizing: border-box;
+}
